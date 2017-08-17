@@ -1,5 +1,5 @@
-require "fincop/cli"
-require "fincop/version"
+require 'fincop/cli'
+require 'fincop/version'
 
 module Fincop
   # Your code goes here...

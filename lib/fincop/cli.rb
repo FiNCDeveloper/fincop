@@ -1,4 +1,4 @@
-require "fileutils"
+require 'fileutils'
 module Fincop
   class CLI
     def self.start(args)
@@ -28,14 +28,14 @@ module Fincop
     end
 
     def self.print_help
-      puts "fincop commands:"
-      puts "  init - Setup .rubocop.yml"
+      puts 'fincop commands:'
+      puts '  init - Setup .rubocop.yml'
     end
 
-    CONFIG_FILE_NAME = ".rubocop.yml"
+    CONFIG_FILE_NAME = '.rubocop.yml'.freeze
     def init(args)
-      raise "usage: fincop init" unless args.empty?
-      template_path = File.expand_path("../../templates", __dir__)
+      raise 'usage: fincop init' unless args.empty?
+      template_path = File.expand_path('../../templates', __dir__)
       puts "#{File.exist?(CONFIG_FILE_NAME) ? "overwrite" : "create"} #{CONFIG_FILE_NAME}"
       FileUtils.copy_file(File.join(template_path, CONFIG_FILE_NAME), CONFIG_FILE_NAME)
     end
