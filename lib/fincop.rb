@@ -1,3 +1,4 @@
+require "fincop/cli"
 require "fincop/version"
 
 module Fincop

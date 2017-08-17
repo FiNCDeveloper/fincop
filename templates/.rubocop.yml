@@ -1,0 +1,11 @@
+inherit_gem:
+  fincop:
+    - 'config/rails.yml'
+    - 'config/rspec.yml'
+    - 'config/rubocop.yml'
+    - 'config/rubocop_disabled.yml'
+
+AllCops:
+  TargetRubyVersion: 2.3
+
+  DisplayStyleGuide: true

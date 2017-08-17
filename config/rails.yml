@@ -1,0 +1,18 @@
+# Based on onk/onkcop
+# https://github.com/onk/onkcop
+
+Rails:
+  Enabled: true
+
+# slug とか created_by とか、NOT NULL だが create_table 時に
+# default 値を定義できないカラムは存在する。
+Rails/NotNullColumn:
+  Enabled: false
+
+# method_missing を隠したい場合は respond_to? を使うべき
+Rails/SafeNavigation:
+  ConvertTry: true
+
+# valid? チェックし忘れを防ぎたい
+Rails/SaveBang:
+  Enabled: true
