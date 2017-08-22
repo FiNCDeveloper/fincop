@@ -22,7 +22,34 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Setup .rubocop.yml
+
+```sh
+bundle exec fincop init
+```
+
+`init` generate the following directive to your `.rubocop.yml`:
+
+```yaml
+inherit_gem:
+  fincop:
+    - 'config/rails.yml'
+    - 'config/rspec.yml'
+    - 'config/rubocop.yml'
+    # If you are using Rails 4, activate this cop.
+    # - 'config/disabled_for_rails_4.yml'
+
+AllCops:
+  TargetRubyVersion: 2.4
+
+  DisplayStyleGuide: true
+```
+
+If you use Rails 4, comment out and activate `'config/disabled_for_rails_4.yml'`.
+
+```sh
+bundle exec rubocop <options...>
+```
 
 ## Development
 
