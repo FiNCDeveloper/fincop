@@ -3,7 +3,8 @@ inherit_gem:
     - 'config/rails.yml'
     - 'config/rspec.yml'
     - 'config/rubocop.yml'
-    - 'config/rubocop_disabled.yml'
+    # If you are using Rails 4, activate this cop.
+    # - 'config/disabled_for_rails_4.yml'
 
 AllCops:
   TargetRubyVersion: 2.3

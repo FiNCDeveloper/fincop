@@ -237,13 +237,8 @@ Style/TernaryParentheses:
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
-# 複数行の場合はケツカンマを入れる(リテラル)
-# JSON がケツカンマを許していないという反対意見もあるが、
-# 古い JScript の仕様に縛られる必要は無い。
-# IE9 以降はリテラルでケツカンマ OK なので正しい差分行の検出に寄せる。
-# 2 insertions(+), 1 deletion(-) ではなく、1 insertions
 Style/TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: comma
+  Enabled: false
 
 Style/VariableNumber:
   EnforcedStyle: normalcase

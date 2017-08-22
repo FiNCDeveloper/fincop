@@ -28,11 +28,13 @@ RSpec/ImplicitExpect:
 RSpec/InstanceVariable:
   Enabled: false
 
-# 強く 1 example 1 assertion の立場は取らないが、多すぎてもツラいので。
 RSpec/MultipleExpectations:
-  Max: 3
+   Enabled: false
 
 # 変に名前つけて呼ぶ方が分かりづらい。
 # テスト対象メソッドを呼ぶだけの subject 以外を書かないようにする方が効く。
 RSpec/NamedSubject:
   Enabled: false
+
+RSpec/NestedGroups:
+   Enabled: false
