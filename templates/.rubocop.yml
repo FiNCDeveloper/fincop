@@ -7,6 +7,6 @@ inherit_gem:
     # - 'config/disabled_for_rails_4.yml'
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
 
   DisplayStyleGuide: true
