@@ -51,6 +51,26 @@ If you use Rails 4, comment out and activate `'config/disabled_for_rails_4.yml'`
 bundle exec rubocop <options...>
 ```
 
+You still can override some rules yourself. First, add setting file (for example, `config/rubocop/.enabled.yml`) and write rules.
+
+```yaml
+Rails/Delegate:
+  EnforceForPrefixed: false
+```
+
+Then, add `inherit_from` to your .rubocop.yml like below.
+
+```yaml
+inherit_gem:
+  fincop:
+    - 'config/rails.yml'
+    - 'config/rspec.yml'
+    - 'config/rubocop.yml'
+
+inherit_from:
+  - 'config/rubocop/.enabled.yml'
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
