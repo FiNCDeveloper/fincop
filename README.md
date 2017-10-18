@@ -45,7 +45,7 @@ AllCops:
   DisplayStyleGuide: true
 ```
 
-If you use Rails 4, comment out and activate `'config/disabled_for_rails_4.yml'`.
+If you use Rails 4, uncomment and activate `'config/disabled_for_rails_4.yml'`.
 
 ```sh
 bundle exec rubocop <options...>
