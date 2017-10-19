@@ -155,7 +155,7 @@ Style/Lambda:
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
-Style/MultilineMethodCallBraceLayout:
+Layout/MultilineMethodCallBraceLayout:
   EnforcedStyle: symmetrical
 
 # 1_000_000 と区切り文字が 2 個以上必要になる場合のみ _ 区切りを必須にする
@@ -176,7 +176,7 @@ Style/PerlBackrefs:
   AutoCorrect: false
 
 # has_ から始まるメソッドは許可する
-Style/PredicateName:
+Naming/PredicateName:
   NamePrefixBlacklist:
     - "is_"
     - "have_"
@@ -240,7 +240,7 @@ Style/TrailingCommaInArguments:
 Style/TrailingCommaInLiteral:
   Enabled: false
 
-Style/VariableNumber:
+Naming/VariableNumber:
   EnforcedStyle: normalcase
 
 # 0 <= foo && foo < 5 のように数直線上に並べるのは
