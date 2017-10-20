@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fincop', '>=0.51.0.0', git: 'git@github.com:FiNCDeveloper/fincop.git
+gem 'fincop', '>=0.51.0.1', git: 'git@github.com:FiNCDeveloper/fincop.git
 ```
 
 ## Usage
