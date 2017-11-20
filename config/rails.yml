@@ -19,3 +19,10 @@ Rails/SaveBang:
 
 Rails/TimeZone:
    Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - production
+    - staging
