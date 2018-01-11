@@ -1,3 +1,3 @@
 module Fincop
-  VERSION = '0.51.0.2'.freeze
+  VERSION = '0.52.1.0'.freeze
 end

@@ -355,3 +355,7 @@ Metrics/PerceivedComplexity:
 # 毎回 YAML.safe_load(yaml_str, [Date, Time]) するのは面倒で。。
 Security/YAMLLoad:
   Enabled: false
+
+# extendとかをどこに書くか迷いやすいのでON、ただし問題が多そうなら即OFFにする
+Layout/ClassStructure:
+   Enabled: true
