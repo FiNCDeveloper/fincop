@@ -18,7 +18,7 @@ Rails/SaveBang:
   Enabled: true
 
 Rails/TimeZone:
-   Enabled: false
+  Enabled: false
 
 Rails/UnknownEnv:
   Environments:
@@ -26,3 +26,6 @@ Rails/UnknownEnv:
     - test
     - production
     - staging
+
+Rails/ReversibleMigration:
+  Enabled: false
