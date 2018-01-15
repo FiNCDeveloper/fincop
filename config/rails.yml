@@ -17,9 +17,6 @@ Rails/SafeNavigation:
 Rails/SaveBang:
   Enabled: true
 
-Rails/TimeZone:
-  Enabled: false
-
 Rails/UnknownEnv:
   Environments:
     - development
