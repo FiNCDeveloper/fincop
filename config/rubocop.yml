@@ -9,6 +9,7 @@ AllCops:
     - "node_modules/**/*"
     - "tmp/**/*"
   DisplayCopNames: true
+  DisplayStyleGuide: true
 
 #################### Layout ################################
 

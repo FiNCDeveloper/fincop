@@ -30,8 +30,6 @@ inherit_gem:
 
 AllCops:
   TargetRubyVersion: 2.4
-
-  DisplayStyleGuide: true
 ```
 
 If you use Rails 4, uncomment and activate `'config/disabled_for_rails_4.yml'`.
