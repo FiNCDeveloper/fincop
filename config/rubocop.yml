@@ -8,6 +8,7 @@ AllCops:
     - "db/schema.rb"
     - "node_modules/**/*"
     - "tmp/**/*"
+    - "config/**/*"
   DisplayCopNames: true
   DisplayStyleGuide: true
 
@@ -321,10 +322,10 @@ Metrics/BlockLength:
     - "spec/**/*.rb"
     - "Gemfile"
     - "Guardfile"
-    - "config/routes.rb"
-    - "config/routes/**/*.rb"
     - "*.gemspec"
-    - "config/environments/*.rb"
+    #- "config/routes.rb"
+    #- "config/routes/**/*.rb"
+    #- "config/environments/*.rb"
 
 # 6 は強すぎるので緩める
 Metrics/CyclomaticComplexity:
