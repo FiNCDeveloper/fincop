@@ -370,3 +370,9 @@ Security/YAMLLoad:
 # extendとかをどこに書くか迷いやすいのでON、ただし問題が多そうなら即OFFにする
 Layout/ClassStructure:
    Enabled: true
+
+#################### Others ################################
+
+# 参考 https://tech.drecom.co.jp/gemfile-style/
+Bundler/OrderedGems:
+  Enabled: true
