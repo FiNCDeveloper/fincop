@@ -274,6 +274,11 @@ Style/WordArray:
 Style/ZeroLengthPredicate:
   Enabled: false
 
+# Matzが is_a? は非推奨なので kind_of? を使うように明言している。
+# https://twitter.com/yukihiro_matz/status/921365048710139904
+Style/ClassCheck:
+  EnforcedStyle: kind_of?
+
 #################### Lint ##################################
 
 # spec 内では
