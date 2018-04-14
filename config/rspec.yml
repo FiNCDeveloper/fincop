@@ -38,3 +38,7 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
    Enabled: false
+
+# 英語力が本当に高くないとつらいので強制はむずい
+RSpec/ContextWording:
+   Enabled: false
