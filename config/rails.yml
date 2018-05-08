@@ -24,5 +24,10 @@ Rails/UnknownEnv:
     - production
     - staging
 
+# アプリケーションの時刻ではなく、ユーザが送ってきたRFC3339(YYYY-MM-DDThh:mm:ssZ) で送られてきたタイムゾーンを使いたい場合に邪魔になる。
+# TimeZoneのない文字列を使わないように寄せるべき。
+Rails/TimeZone:
+  Enabled: false
+
 Rails/ReversibleMigration:
   Enabled: false
