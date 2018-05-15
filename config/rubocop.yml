@@ -323,8 +323,11 @@ Lint/UnusedMethodArgument:
 
 # 30 まではギリギリ許せる範囲だったけど
 # リリースごとに 3 ずつぐらい下げていきます。20 まで下げたい。
+# migrationには不要
 Metrics/AbcSize:
   Max: 24
+  Exclude:
+    - "db/migrate/*.rb"
 
 # Gemfile, Guardfile は DSL 的で基本的に複雑にはならないので除外
 # rake, rspec, routes は巨大な block 不可避なので除外
@@ -340,6 +343,7 @@ Metrics/BlockLength:
     - "config/routes/**/*.rb"
     - "*.gemspec"
     - "config/environments/*.rb"
+    - "db/migrate/*.rb"
 
 # 6 は強すぎるので緩める
 Metrics/CyclomaticComplexity:
