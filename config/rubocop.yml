@@ -386,8 +386,3 @@ Layout/ClassStructure:
 # 参考 https://tech.drecom.co.jp/gemfile-style/
 Bundler/OrderedGems:
   Enabled: true
-
-# 0.56だとfalse positives
-# https://github.com/bbatsov/rubocop/issues/5887
-Lint/SplatKeywordArguments:
-  Enabled: false
