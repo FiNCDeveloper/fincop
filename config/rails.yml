@@ -31,3 +31,7 @@ Rails/TimeZone:
 
 Rails/ReversibleMigration:
   Enabled: false
+
+Rails/Exit:
+  Exclude:
+    - "lib/tasks/**/*" # コマンドで起動するやつはexit 1を使うべき
