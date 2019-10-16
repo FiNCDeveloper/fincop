@@ -1,7 +1,8 @@
 # Based on onk/onkcop
 # https://github.com/onk/onkcop
 
-require: "rubocop-rspec"
+require:
+  - rubocop-rspec
 
 # subject はコピペ可搬性よりもそのまま USAGE であって欲しい
 RSpec/DescribedClass:
