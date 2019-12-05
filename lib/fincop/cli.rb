@@ -17,7 +17,7 @@ module Fincop
       puts "Could not find command #{action_name}."
       print_help
       exit(1)
-    rescue => e
+    rescue StandardError => e
       puts e.message
       exit(1)
     end
@@ -35,6 +35,7 @@ module Fincop
     CONFIG_FILE_NAME = '.rubocop.yml'.freeze
     def init(args)
       raise 'usage: fincop init' unless args.empty?
+
       template_path = File.expand_path('../../templates', __dir__)
       puts "#{File.exist?(CONFIG_FILE_NAME) ? "overwrite" : "create"} #{CONFIG_FILE_NAME}"
       FileUtils.copy_file(File.join(template_path, CONFIG_FILE_NAME), CONFIG_FILE_NAME)
