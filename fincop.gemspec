@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fincop/version'
 
@@ -22,9 +21,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', '>= 0.77.0'
+  spec.add_dependency 'rubocop-performance'
   spec.add_dependency 'rubocop-rails'
   spec.add_dependency 'rubocop-rspec', '>= 1.22.0'
-  spec.add_dependency 'rubocop-performance'
   spec.add_development_dependency 'bundler', '~> 1.17.3'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
