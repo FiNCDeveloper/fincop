@@ -43,3 +43,7 @@ RSpec/NestedGroups:
 # 英語力が本当に高くないとつらいので強制はむずい
 RSpec/ContextWording:
    Enabled: false
+
+# 変に`let`を使うことを避けるよりも必要に応じて使用した方が複数の条件での検証などは書きやすい
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
