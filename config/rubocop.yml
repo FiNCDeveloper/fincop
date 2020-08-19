@@ -321,7 +321,7 @@ Lint/UnusedMethodArgument:
 # リリースごとに 3 ずつぐらい下げていきます。20 まで下げたい。
 # migrationには不要
 Metrics/AbcSize:
-  Max: 24
+  Max: 28
   Exclude:
     - "db/migrate/*.rb"
 
@@ -365,7 +365,7 @@ Metrics/ParameterLists:
 
 # 分岐の数。ガード句を多用しているとデフォルト 7 だと厳しい
 Metrics/PerceivedComplexity:
-  Max: 8
+  Max: 10
 
 #################### Security ##############################
 
